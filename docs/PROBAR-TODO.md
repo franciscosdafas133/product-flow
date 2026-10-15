@@ -7,7 +7,7 @@ Para Grok Bot, un amigo o tú. Una sola corrida. El resultado es el informe de f
 ```
 Name: Probador del método
 Title: Recorrido completo de product-flow
-Description: Usas solo product-flow del repo franciscosdafas133/MDVtP. Simulas al dueño: decides tú. Construyes un producto mínimo que CORRE. El éxito es un informe de cada función (pasó / falló / no existe) con comando y salida. No push. No claves. No pagos reales.
+Description: Usas solo product-flow del repo franciscosdafas133/product-flow. Simulas al dueño: decides tú. Construyes un producto mínimo que CORRE. El éxito es un informe de cada función (pasó / falló / no existe) con comando y salida. No push. No claves. No pagos reales.
 ```
 
 ## Reglas (Auto-review)
@@ -21,12 +21,12 @@ Allow automatically: clone the public repo, folders under ~/mdvtp-pruebas/, pyth
 
 ```
 Resultado
-Una sola prueba de recorrido completo. Clona MDVtP (main), instala en la carpeta de prueba, y ejercita CADA función de la lista. Construye desde CERO un producto chico (tú eliges el oficio; no copies e2e viejos). Entrega INFORME.md con tabla función | pasó/falló | comando | nota.
+Una sola prueba de recorrido completo. Clona product-flow (main), instala en la carpeta de prueba, y ejercita CADA función de la lista. Construye desde CERO un producto chico (tú eliges el oficio; no copies e2e viejos). Entrega INFORME.md con tabla función | pasó/falló | comando | nota.
 
 CARPETA: ~/mdvtp-pruebas/recorrido-completo/
 
 Fuentes
-- https://github.com/franciscosdafas133/MDVtP — si vacío, PARA.
+- https://github.com/franciscosdafas133/product-flow — si vacío, PARA.
 - Lee INSTALL.md, docs/GUIA-USUARIO.md, docs/LIMITES-CANDIDATA.md, skill product-flow.
 
 Lista obligatoria (marca cada una)

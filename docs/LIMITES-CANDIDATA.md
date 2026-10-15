@@ -22,9 +22,11 @@
 ## Cómo comprobarlo en otra máquina
 
 ```bash
-git clone https://github.com/franciscosdafas133/MDVtP.git
-cd MDVtP
+git clone https://github.com/franciscosdafas133/product-flow.git
+cd product-flow
 python3 scripts/run_regresion.py
 ```
 
-Tiene que terminar en `7/7 → ok`. Uso diario: [GUIA-USUARIO.md](GUIA-USUARIO.md) e [INSTALL.md](../INSTALL.md).
+Tiene que terminar en `7/7 → ok`.
+
+Onboarding: [PRIMEROS-PASOS.md](PRIMEROS-PASOS.md). Uso diario: [GUIA-USUARIO.md](GUIA-USUARIO.md) e [INSTALL.md](../INSTALL.md). Testeo público: [SHIP-TESTEO.md](SHIP-TESTEO.md).

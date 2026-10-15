@@ -1,21 +1,23 @@
 # Cómo instalar el método
 
 Versión: ver [VERSION](VERSION).  
-Uso: [docs/GUIA-USUARIO.md](docs/GUIA-USUARIO.md).  
+**Empezar a usarlo:** [docs/PRIMEROS-PASOS.md](docs/PRIMEROS-PASOS.md).  
+Invocación en Cursor (slash, reinicio, carpeta vs plugin): [docs/CURSOR.md](docs/CURSOR.md).  
+Uso CLI: [docs/GUIA-USUARIO.md](docs/GUIA-USUARIO.md).  
 Límites: [docs/LIMITES-CANDIDATA.md](docs/LIMITES-CANDIDATA.md).
 
 Lo que se descarga para usar es la skill en `skills/product-flow/` (y el plugin en `.cursor-plugin/`).
 
-## Opción A — Skill (la más directa)
+## Opción A — Skill (la más directa para testeo)
 
 ```bash
-git clone https://github.com/franciscosdafas133/MDVtP.git
-cp -R MDVtP/skills/product-flow ~/.cursor/skills/product-flow
+git clone https://github.com/franciscosdafas133/product-flow.git
+cp -R product-flow/skills/product-flow ~/.cursor/skills/product-flow
 # Claude Code:
-# cp -R MDVtP/skills/product-flow ~/.claude/skills/product-flow
+# cp -R product-flow/skills/product-flow ~/.claude/skills/product-flow
 ```
 
-En el chat: pide **product-flow**.
+Reinicia Cursor. En el chat: pide **product-flow** (no hace falta el menú `/`).
 
 ```bash
 python3 ~/.cursor/skills/product-flow/scripts/product_flow.py iniciar --proyecto . --idea "Mi app…"
@@ -25,16 +27,16 @@ python3 ~/.cursor/skills/product-flow/scripts/product_flow.py iniciar --proyecto
 
 1. Clona o abre este repo.
 2. En Cursor: Customize → importar plugin **From GitHub Repository**  
-   `https://github.com/franciscosdafas133/MDVtP`  
+   `https://github.com/franciscosdafas133/product-flow`  
    (o “from folder” si tu Cursor lo permite sobre este clone).
 3. Debe cargar la skill desde `skills/` (ver `.cursor-plugin/plugin.json`).
 
-Aún no está en el Marketplace oficial.
+Aún no está en el Marketplace oficial. Si el plugin no lista el slash, usa la Opción A o pega texto: ver [docs/CURSOR.md](docs/CURSOR.md).
 
 ## Opción C — Instalador del repo
 
 ```bash
-cd MDVtP
+cd product-flow
 python3 scripts/install_metodo.py install --alcance global --hosts cursor,claude
 python3 scripts/install_metodo.py status --alcance global
 ```
@@ -48,7 +50,7 @@ python3 scripts/install_metodo.py install --alcance proyecto --proyecto /ruta/al
 ## Comprobar el paquete
 
 ```bash
-cd MDVtP
+cd product-flow
 python3 scripts/run_regresion.py
 ```
 

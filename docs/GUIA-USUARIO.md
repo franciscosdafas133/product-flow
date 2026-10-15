@@ -1,14 +1,19 @@
 # Guía breve — el método (product-flow)
 
-Versión candidata: ver [VERSION](../VERSION).  
+Versión candidata: ver [VERSION](../VERSION).
+
+**Nuevo aquí:** [PRIMEROS-PASOS.md](PRIMEROS-PASOS.md) (15 min) · [GLOSARIO.md](GLOSARIO.md) · [CURSOR.md](CURSOR.md) · [MAPA-FASES.md](MAPA-FASES.md) · [TUTORIAL-E2E.md](TUTORIAL-E2E.md) · [FAQ.md](FAQ.md).
+
 Instalación: [INSTALL.md](../INSTALL.md).  
 Límites: [LIMITES-CANDIDATA.md](LIMITES-CANDIDATA.md).  
 Probar todo: [PROBAR-TODO.md](PROBAR-TODO.md).  
-Mantener / publicar: [MANTENIMIENTO.md](MANTENIMIENTO.md) · [PUBLICAR-GITHUB.md](PUBLICAR-GITHUB.md).
+Mantener / publicar: [MANTENIMIENTO.md](MANTENIMIENTO.md) · [PUBLICAR-GITHUB.md](PUBLICAR-GITHUB.md) · [SHIP-TESTEO.md](SHIP-TESTEO.md).
 
 ## Para qué sirve
 
-Te guía desde una idea vaga hasta un incremento con documentos, decisiones, pruebas honestas y un plan de entrega. **Tú** decides producto; el agente propone y el validador frena estados ilegales.
+Te guía desde una idea vaga hasta un incremento con documentos, decisiones, **código**, pruebas honestas y un plan de entrega. **Tú** decides producto; el agente propone y el validador frena estados ilegales.
+
+No es solo documentación: el hueco idea → código se cierra en TASK + implementar + evidenciar ([MAPA-FASES.md](MAPA-FASES.md)).
 
 ## Empezar (una vez)
 
@@ -17,7 +22,7 @@ Te guía desde una idea vaga hasta un incremento con documentos, decisiones, pru
 python3 scripts/install_metodo.py install --alcance global --hosts cursor,claude
 ```
 
-En el chat: pide la skill **product-flow** (o `/product-flow`).
+En el chat: pide la skill **product-flow** (o `/product-flow`). Si no hay slash → [CURSOR.md](CURSOR.md).
 
 ## Acciones que más usarás
 
@@ -47,6 +52,7 @@ Luego evidenciar y verificar. No digas “ya está” si la prueba no corrió.
 - `--cubre` nombra el programa (y la prueba). Sin eso no hay evidencia de comando.
 - Una integración real (`MANUAL_VERIFY_REQUIRED`) se queda pendiente: no se evidencia, no se desbloquea, no se verifica.
 - El validador manda: `python3 …/validate_workflow.py workflow`.
+- “Puerta”, ASK, vigente… → [GLOSARIO.md](GLOSARIO.md).
 
 ## Comprobar el paquete
 

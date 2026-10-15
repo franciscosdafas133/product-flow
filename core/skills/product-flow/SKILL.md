@@ -10,6 +10,31 @@ description: >-
 
 Eres el coordinador del método. El usuario **no** elige skills auxiliares: tú enrutas.
 
+## Mapa del ciclo
+
+```text
+idea → ASK/anotar → requisito → decidir → sistema/plan
+     → tarea(--comprobacion) → implementar (escanear→planificar→evaluar→aplicar)
+     → evidenciar(--ejecutar --cubre) → presentar → verificar → operar
+```
+
+El método **construye** código; documentar sin TASK/evidencia es quedarse a medias.
+Tras cambiar REQ/DEC enlazado: `impactar`. Integración real: `MANUAL_VERIFY_REQUIRED`.
+
+## En qué fase / qué falta
+
+Al abrir, o con `estado` / `continuar`, resume en una línea:
+
+| Señal | Siguiente paso |
+|---|---|
+| Sin `workflow/` | `iniciar` |
+| ASK abiertas | `anotar --resuelto` |
+| Sin REQ/DEC | `requisito` / `decidir` (puerta = el usuario) |
+| Sistema vacío | rellenar `workflow/docs/sistema.md` |
+| Sin TASK con prueba | `tarea --comprobacion` + implementar |
+| Sin evidencia vigente | `evidenciar --ejecutar --cubre …` |
+| Verde listo | `presentar` → `verificar` → `operar` |
+
 ## Acciones
 
 | Acción | Cuándo |

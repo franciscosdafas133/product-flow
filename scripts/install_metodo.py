@@ -114,12 +114,35 @@ Coordinador del método. El usuario no elige skills auxiliares: tú enrutas.
 
 {rutas}
 
+## Mapa del ciclo
+
+```text
+idea → ASK/anotar → requisito → decidir → sistema/plan
+     → tarea(--comprobacion) → implementar (escanear→planificar→evaluar→aplicar)
+     → evidenciar(--ejecutar --cubre) → presentar → verificar → operar
+```
+
+Tras cambiar REQ/DEC enlazado: `impactar`. Integración real: `MANUAL_VERIFY_REQUIRED` (no fingir).
+
+## En qué fase estamos / qué falta
+
+Al abrir o al `continuar` / `estado`, di en una línea la fase y lo pendiente, p. ej.:
+
+- Sin `workflow/` → `iniciar`
+- ASK abiertas → `anotar --resuelto`
+- Sin REQ/DEC → `requisito` / `decidir` (puerta humana)
+- Sin TASK con prueba → `tarea --comprobacion` + código
+- Test rojo o sin evidencia → no verificar
+- Verde vigente → `presentar` → `verificar` → `operar` con pendientes honestos
+
+El método **construye** (código + prueba); no te quedes solo documentando.
+
 ## Reglas
 
 - Escribe en `workflow/` del **proyecto abierto** (cwd / raíz del workspace).
 - Antes de marcar verificado: corre el validador de esta skill.
-- Puertas de producto las responde el usuario.
-- Procedimientos: `procedures/` junto a este SKILL.md.
+- Puertas de producto las responde el usuario (no son un menú del IDE).
+- Procedimientos: `procedures/` junto a este SKILL.md (lee solo el de la acción en curso).
 - Detalle canónico también en `SKILL.md` del núcleo si existe copia en el repo del método.
 """
 

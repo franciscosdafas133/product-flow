@@ -6,10 +6,10 @@
     "cursor",
     "claude"
   ],
-  "instalado": "2026-10-15T01:31:42Z",
+  "instalado": "2026-10-15T01:58:52Z",
   "archivos": {
     "SKILL.md": {
-      "sha256": "541d184af3a9cf2f7bd9a6421f09f69c703f867ce3be706e4b8ce655961f5ffb"
+      "sha256": "cb29cbd60020f469e28e44974e0d8a62404752cc634ec40547fd514b14f60a47"
     },
     "THIRD_PARTY_NOTICES.md": {
       "sha256": "6e5ccb1a29e3cd36f95e0a543af1e2d60f7a9073bd2ce121c1e81e26d5d0a455"
